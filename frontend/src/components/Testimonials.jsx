@@ -131,7 +131,7 @@ export default function Testimonials({ setActiveTab }) {
     };
 
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       await fetch(`${backendUrl}/api/reviews/create`, {
         method: 'POST',

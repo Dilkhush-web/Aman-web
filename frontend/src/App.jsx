@@ -30,7 +30,7 @@ export default function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(false);
 
   // 🌐 DYNAMIC BACKEND API BASE URL
-  const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+  const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
   // 3 Curated Sharp Frames with Optical Top-Center Focal Balance
   const introFrames = [

@@ -87,7 +87,7 @@ export default function ClientVault({ onLogout, clientId }) {
 
   const handleFetchDrivePhotos = async (link) => {
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const response = await fetch(`${backendUrl}/api/client/fetch-drive`, {
         method: 'POST',
@@ -136,7 +136,7 @@ export default function ClientVault({ onLogout, clientId }) {
   // Final Submit
   const handleFinalSubmit = async () => {
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const res = await fetch(`${backendUrl}/api/client/submit-selection`, {
         method: 'POST',

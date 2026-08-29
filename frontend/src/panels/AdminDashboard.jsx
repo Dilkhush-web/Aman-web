@@ -35,7 +35,7 @@ export default function AdminDashboard({ onLogout }) {
     let backendClients = [];
     
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const res = await fetch(`${backendUrl}/api/admin/clients`);
       const data = await res.json();
@@ -69,7 +69,7 @@ export default function AdminDashboard({ onLogout }) {
 
   const fetchBookings = async () => {
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const res = await fetch(`${backendUrl}/api/admin/bookings`); 
       const data = await res.json();
@@ -155,7 +155,7 @@ export default function AdminDashboard({ onLogout }) {
         setClients(clients.filter(c => c._id !== id));
       } else {
        try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const response = await fetch(`${backendUrl}/api/admin/clients/${id}`, {
         method: 'DELETE'
@@ -191,7 +191,7 @@ export default function AdminDashboard({ onLogout }) {
     }
 
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const url = isEditing 
         ? `${backendUrl}/api/admin/clients/${editClientId}` 

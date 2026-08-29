@@ -19,7 +19,7 @@ export default function Footer({ onSecretTrigger, currentView, setCurrentView, s
     setIsSubmitting(true);
 
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
       await fetch(`${backendUrl}/api/newsletter/subscribe`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -356,7 +356,7 @@ export default function Services({ setActiveTab }) {
     setIsSubmitting(true);
 
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
       const response = await fetch(`${backendUrl}/api/bookings/create`, {
         method: 'POST',

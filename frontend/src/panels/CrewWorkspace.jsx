@@ -109,7 +109,7 @@ export default function CrewWorkspace({ onLogout }) {
   const fetchProjects = async (silent = false) => {
     try {
       if (!silent) setIsLoading(true);
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
       const res = await fetch(`${backendUrl}/api/admin/clients`);
       const result = await res.json();
 
@@ -230,7 +230,7 @@ export default function CrewWorkspace({ onLogout }) {
 
     if (confirmDelete) {
       try {
-        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com/';
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://aman-web-nuwa.onrender.com';
 
         const res = await fetch(`${backendUrl}/api/admin/clients/${activeProject._id}`, { 
           method: 'DELETE' 
